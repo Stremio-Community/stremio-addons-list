@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "@octokit/graphql": "^4.5.2",
-    "needle": "3.1.0",
     "async.queue": "0.5.2",
+    "dotenv": "^16.4.7",
+    "needle": "3.1.0",
     "slug": "8.2.2"
   },
   "engines": {

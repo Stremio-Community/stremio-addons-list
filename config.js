@@ -1,8 +1,13 @@
+require('dotenv').config()
+
 module.exports = {
+	// env vars
+	"DISCORD_WEBHOOK": process.env.DISCORD_WEBHOOK,
+	"GITHUB_TOKEN": process.env.TOKEN,
 	// for repo: danamag/stremio-addons-list
-	"repository": "stremio-addons-list",
-	"author": "danamag",
-	"netlify-domain": "stremio-addons.netlify.app",
+	"repository": process.env.REPO || "stremio-addons-list",
+	"author": process.env.REPO_AUTHOR || "danamag",
+	"netlify-domain": process.env.DOMAIN || "stremio-addons.com",
 	"page-title": "Stremio Community Addons List",
 	// images are located in ./resources/
 	"meta-favicon": "stremio_community_logo.png",

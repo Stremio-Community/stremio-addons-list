@@ -2,7 +2,7 @@
 > [!NOTE]  
 > Due to recent abuse of this repository (malicious addons, spam) by a user called [vancengvn](https://github.com/Vance-ng-vn) we were forced to implement a moderation system. New addon submissions now need explicit approval from a contributor to be published - unless you are on the [trusted publishers](./trusted_publishers.json) list. Please contact a moderator on Discord or Reddit if your addon hasn't been approved after 7 days.
 
-To see the great list of Stremio Addons go to [the website](https://stremio-addons.netlify.app/).
+To see the great list of Stremio Addons go to [the website](https://stremio-addons.com/).
 
 To submit a new addon to the list, use [this link](https://github.com/danamag/stremio-addons-list/issues/new?assignees=&labels=pending+approval&template=submit-addon.yaml&title=Addon+Name).
 
