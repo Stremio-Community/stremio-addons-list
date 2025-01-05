@@ -32,7 +32,7 @@ module.exports = {
 	"needle": { "open_timeout": 5000, "response_timeout": 5000, "read_timeout": 5000, "follow_max": 5 },
 	// output folder for build
 	"build-dir": "./out",
-	"blockedAnnouncers": [
+	"blockedManifests": [
   	"https://comet.elfhosted.com/manifest.json",
 	]
 }
