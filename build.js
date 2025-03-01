@@ -209,7 +209,7 @@ getCached().then(cached => {
 
     queue.drain = () => {
       if (config.DISCORD_WEBHOOK && newAddons.length)
-        sendDiscordMessage(newAddons)
+        sendDiscordMessage(newAddons.filter(addon => !config.blockedAnnouncers.includes(addon.url)))
       console.log('copying resources (styles, js, images)')
       fs.readdirSync('./resources').forEach(file => {
         const filePath = `./resources/${file}`
@@ -225,11 +225,13 @@ getCached().then(cached => {
         version: '1.0.0',
         name: 'Stremio Community Addons List',
         description: 'Stremio Community Addons List',
+        types: ["movie", "series", "channel", "tv"],
         resources: ['addon_catalog'],
+        catalogs: [],
         addonCatalogs: [{
           type: 'all',
           id: 'community',
-          name: 'Community',
+          name: 'Community (External)',
         }],
       };
 
